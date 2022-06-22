@@ -1,0 +1,139 @@
+.ike__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0rem 3.5rem;
+    background: #2e2d2c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.ike__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ike__navbar-links_container p,
+.ike__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.ike__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.ike__navbar-links_logo img {
+    margin-top: 10px;
+    width: 10vw;
+    height: 10vh;
+}
+
+.ike__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__navbar-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ike__navbar-contact button,
+.ike__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #2e2d2c;
+    background: #ffe28f;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ike__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.ike__navbar-menu svg {
+    cursor: pointer;
+}
+
+.ike__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ike__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.ike__navbar-menu_container-links-contact {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .ike__navbar-links_container {
+        display: none;
+    }
+
+    .ike__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ike__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ike__navbar {
+        padding: 2rem;
+    }
+
+    .ike__navbar-contact {
+        display: none;
+    }
+
+    .ike__navbar-menu_container {
+        top: 20px;
+    }
+
+    .ike__navbar-menu_container-links-contact {
+        display: block;
+    }
+}
