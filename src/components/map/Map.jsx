@@ -16,6 +16,14 @@ const Map = ({ style, zoom, center }) => {
     }
   }, [ref, map]);
 
+  useEffect(() => {
+    new window.google.maps.Marker({
+      position: center,
+      map: map,
+      title: "Hello World!",
+    });
+  }, [ref, map]);
+
   return (
     <div className="ike__map section__padding">
       <div className="ike__map-calander">

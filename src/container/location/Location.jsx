@@ -3,10 +3,10 @@ import "./Location.css";
 import { Wrapper } from "@googlemaps/react-wrapper";
 import { Map } from "../../components/index";
 const Location = () => {
-  const [zoom, setZoom] = React.useState(3); // initial zoom
+  const [zoom, setZoom] = React.useState(18); // initial zoom
   const [center, setCenter] = React.useState({
-    lat: 0,
-    lng: 0,
+    lat: 40.7552478,
+    lng: -73.9275324,
   });
 
   return (
