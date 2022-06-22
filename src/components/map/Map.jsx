@@ -1,16 +1,36 @@
-import React from 'react'
-import './Map.css'
+import React, { useEffect, useRef, useState } from "react";
+import "./Map.css";
 
-const Map = () => {
-    return (
-        <div className='ike__map section__padding'>
-            <div className='ike__map-calander'>
-                <h1>Map</h1>
-            </div>
+const Map = ({ style, zoom, center }) => {
+  const [map, setMap] = useState();
+  const ref = useRef(null);
 
-        </div>
-    );
-}
+  useEffect(() => {
+    if (ref.current && !map) {
+      setMap(
+        new window.google.maps.Map(ref.current, {
+          center,
+          zoom,
+        })
+      );
+    }
+  }, [ref, map]);
 
+  useEffect(() => {
+    new window.google.maps.Marker({
+      position: center,
+      map: map,
+      title: "Hello World!",
+    });
+  }, [ref, map]);
 
-export default Map
+  return (
+    <div className="ike__map section__padding">
+      <div className="ike__map-calander">
+        <div style={style} ref={ref}></div>
+      </div>
+    </div>
+  );
+};
+
+export default Map;
