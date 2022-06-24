@@ -1,11 +1,11 @@
-.ike__skills {
+.ike__services {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
-.ike__skills-heading {
+.ike__services-heading {
     flex: 1;
     display: flex;
     justify-content: flex-start;
@@ -13,17 +13,16 @@
     flex-direction: column;
 
     text-align: left;
-    margin-right: 5rem;
 }
 
-.ike__skills-heading h1 {
+.ike__services-heading h1 {
     font-size: 50px;
     line-height: 45px;
     font-weight: 800;
     font-family: var(--font-family);
 }
 
-.ike__skills-heading p {
+.ike__services-heading p {
     color: var(--color-subtext);
     font-size: 16px;
     line-height: 30px;
@@ -33,7 +32,7 @@
     margin-top: 2rem;
 }
 
-.ike__skills-container {
+.ike__services-container {
     flex: 1.5;
     display: flex;
     justify-content: flex-start;
@@ -43,7 +42,7 @@
 
 }
 
-.ike__skills-container__main {
+.ike__services-container__main {
     padding: 2rem;
     background: var(--color-footer);
 
@@ -59,19 +58,15 @@
 }
 
 @media screen and (max-width: 990px) {
-    .ike__skills {
+    .ike__services-container {
         flex-direction: column;
-    }
-
-    .ike__skills-heading {
-        margin: 0 0 2rem 0;
     }
 }
 
 
 @media screen and (max-width: 550px) {
-    .ike__skills-heading h1 {
-        font-size: 48px;
+    .ike__services-heading h1 {
+        font-size: 36px;
         line-height: 38px;
     }
 }

@@ -31,44 +31,58 @@
     margin-bottom: 0.25rem;
 }
 
-.ike__services-container_service-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ike__services-container_service-image img {
-    height: 100%;
-    width: 100%;
-}
-
-.ike__services-container_service-price p {
+.ike__services-container__service-price p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #faf0d2;
-
-    margin-top: 1.5rem;
     
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 490px) {
     .ike__services-container__service-title h1 {
         font-size: 14px;
         line-height: 22px;
     }
+    .ike__services-container__service-price p {
+        font-size: 14px;
+        line-height: 22px;
+    }
     .ike__services-container__service {
-        margin: 1rem 0;
-        
+        flex-direction: column;
     }
-    .ike__services-container {
-        flex-wrap: wrap;
-        
+}
+
+@media screen and (max-width: 650px) {
+    .ike__about-content h1 {
+        font-size: 24px;
+        line-height: 60px;
     }
-    .ike__services-container_service-image img {
-        height: 50%;
-        width: 50%;
+    .ike__about-content h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .ike__about-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 490px) {
+    .ike__about-content h1 {
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .ike__about-content h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .ike__about-content p {
+        font-size: 14px;
+        line-height: 24px;
     }
 }

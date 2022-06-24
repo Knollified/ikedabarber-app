@@ -1,11 +1,12 @@
 import React from 'react'
 import './Schedule.css'
+import { InlineWidget } from "react-calendly";
 
 const Schedule = () => {
     return (
-        <div className='ike__schedule section__padding'>
-            <div className='ike__schedule-calander'>
-                <h1>Calander</h1>
+        <div className='ike__schedule'>
+            <div className='ike__schedule-content'>
+                <InlineWidget url="https://calendly.com/dev-jtorres/hair-cut" />
             </div>
 
         </div>

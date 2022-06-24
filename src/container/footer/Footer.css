@@ -26,6 +26,7 @@
     font-size: 62px;
     line-height: 75px;
     letter-spacing: -0.04em;
+    color: #faf0d2;
 }
 .ike__footer-content p {
     color: #fff;
@@ -54,7 +55,7 @@
 
 @media screen and (max-width: 650px) {
     .ike__footer-heading h1 {
-        font-size: 36px;
+        font-size: 34px;
         line-height: 60px;
     }
     .ike__footer-content p {
@@ -65,7 +66,7 @@
 }
 @media screen and (max-width: 550px) {
     .ike__footer-heading h1 {
-        font-size: 36px;
+        font-size: 34px;
         line-height: 48px;
     }
     .ike__footer-content p {
@@ -76,7 +77,7 @@
 
 @media screen and (max-width: 490px) {
     .ike__footer-heading h1 {
-        font-size: 36px;
+        font-size: 34px;
         line-height: 48px;
     }
     .ike__footer-content p {

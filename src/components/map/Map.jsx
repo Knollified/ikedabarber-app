@@ -20,14 +20,14 @@ const Map = ({ style, zoom, center }) => {
     new window.google.maps.Marker({
       position: center,
       map: map,
-      title: "Hello World!",
+      title: "Icons Barbershop",
     });
   }, [ref, map]);
 
   return (
-    <div className="ike__map section__padding">
-      <div className="ike__map-calander">
-        <div style={style} ref={ref}></div>
+    <div className="ike__map">
+      <div className="ike__map-content">
+        <div className="ike__map-map" style={style} ref={ref}></div>
       </div>
     </div>
   );

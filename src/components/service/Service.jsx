@@ -8,7 +8,7 @@ const Service = ({title, price}) => {
                 <div />
                 <h1>{title}</h1>
             </div>
-            <div className="ike__services-container_service-price">
+            <div className="ike__services-container__service-price">
                 <div />
                 <p>{price}</p>
             </div>

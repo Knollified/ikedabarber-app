@@ -13,8 +13,8 @@ function App() {
         <About />
         <Services />
         <Gallery />
-        <Location />
         <Book />
+        <Location />
         <Footer />
       </div>
     </div>
